@@ -1,13 +1,13 @@
-import PermanentDrawerLeft from "../../components/PermanentDrawerLeft"
+import { user } from "./mock"
+import { MainContainer, PageH1 } from "./styles"
+
 export default function Home() {
 
     return (
-        <>
-
-            <h1 style={{ color: "white" }}>Hello WorldDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDd</h1>
-
-        </>
+        <MainContainer>
+            <PageH1>Bem vindo, {user.name}.</PageH1>
 
 
+        </MainContainer >
     )
 }
