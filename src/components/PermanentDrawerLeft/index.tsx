@@ -26,6 +26,7 @@ import MenuIcon from '@mui/icons-material/Menu';
 import SearchIcon from '@mui/icons-material/Search';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import NotificationsIcon from '@mui/icons-material/Notifications';
+import { darkTheme } from '../../configs';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -69,13 +70,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 }));
 
 const drawerWidth = 240;
-
-const darkTheme = createTheme({
-    palette: {
-        mode: 'dark',
-
-    },
-});
 
 const Main = styled('main', { shouldForwardProp: (prop) => prop !== 'open' })<{
     open?: boolean;

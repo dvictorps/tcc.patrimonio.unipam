@@ -1,4 +1,7 @@
 export const req = {
+    status: {
+        code: '200'
+    },
     user: {
         id: 0,
         name: 'Victor Pereira'
